@@ -4,6 +4,7 @@ import Users from './Users';
 import Home from './Home';
 import Posts from './Posts';
 import Header from './Header';
+import './App.css'
 
 function App() {
   const [users, setUsers] = useState([]);
@@ -42,9 +43,9 @@ function App() {
       <BrowserRouter>
       <Header/>
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/users" element={<Users users={users}/>} />
-          <Route path="/posts" element={<Posts posts={posts}/>} />
+          <Route  path="/" element={<Home />} />
+          <Route  path="/users" element={<Users users={users}/>} />
+          <Route  path="/posts" element={<Posts posts={posts}/>} />
         </Routes>
       </BrowserRouter>
     </main>

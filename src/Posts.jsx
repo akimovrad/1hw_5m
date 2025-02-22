@@ -8,7 +8,7 @@ export default function Posts({ posts }) {
             {
                 posts.map((post) => {
                     return (
-                        <h2>{post.title}</h2>
+                        <h2 key={post.id}>{post.title}</h2>
                     )
                 })
             }

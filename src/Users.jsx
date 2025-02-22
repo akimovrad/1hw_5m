@@ -9,7 +9,7 @@ export default function Users({users}) {
          {
                 users.map((user) => {
                     return (
-                        <h2>{user.name}</h2>
+                        <h2 key={user.id}>{user.name}</h2>
                     )
                 })
             }
